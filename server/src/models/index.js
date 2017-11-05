@@ -11,8 +11,9 @@ const sequelize = new Sequelize(
   config.db.options
 )
 
-fs.readdirSync(__dirname)
-  .filter(file) =>
+fs
+  .readdirSync(__dirname)
+  .filter((file) =>
     file !== 'index.js'
   )
   .forEach((file) => {
