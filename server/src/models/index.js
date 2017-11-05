@@ -4,14 +4,14 @@ const Sequelize = require('sequelize')
 const config = require('../config/config')
 const db = {}
 
-/*
+
 const sequelize = new Sequelize(
   config.db.database,
   config.db.user,
   config.db.password,
   config.db.options
-)*/
-const sequelize = new Sequelize('postgres://tabtracker:tabtracker@localhost:5432/tabtracker');
+)
+//const sequelize = new Sequelize('postgres://tabtracker:tabtracker@localhost:5432/tabtracker');
 
 fs
   .readdirSync(__dirname)
