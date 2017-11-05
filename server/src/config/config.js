@@ -7,7 +7,6 @@ module.exports = {
     options: {
       dialect: process.env.DIALECT || 'postgres',
       host: process.env.HOST || 'localhost',
-      storage: './tabtracker.postgres'
     }
   }
 }
