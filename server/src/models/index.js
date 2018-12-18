@@ -13,6 +13,16 @@ const sequelize = new Sequelize(
 )
 //const sequelize = new Sequelize('postgres://tabtracker:tabtracker@localhost:5432/tabtracker');
 
+//Test the connection
+sequelize
+  .authenticate()
+  .then ( () => {
+    console.log('Conneciton successfully');
+  })
+  .catch(err => {
+    console.error('unable connection db');
+  });
+
 fs
   .readdirSync(__dirname)
   .filter((file) =>
@@ -20,8 +30,13 @@ fs
   )
   .forEach((file) => {
     const model = sequelize.import(path.join(__dirname, file))
-    db.User = model
+    console.log("__dirname = %s", __dirname)
+    console.log("file = %s", file)
+    console.log(" model.name = %s", model)
+    db[model.name] = model
+    //db.User = model
   })
+
 
 db.sequelize = sequelize
 db.Sequelize = Sequelize
