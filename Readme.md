@@ -8,13 +8,13 @@ https://github.com/codyseibert/tab-tracker
  - 1.02. \# git clone https://github.com/codyseibert/tab-tracker.git
  - 1.03. https://github.com/vuejs/vue-cli
  - 1.04. \# npm install -g vue-cli
-#Client
+# Client
  - 1.05. \# vue init webpack client
  - 1.06. \# cd client
  - 1.07. \# npm install
  - 1.08. \# npm run dev
 
-#Server
+# Server
  - 1.09. \# cd .. && mkdir server && cd server
  - 1.10. \# npm init -f
  - 1.11. \# npm install
