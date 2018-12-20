@@ -13,6 +13,7 @@ https://github.com/codyseibert/tab-tracker
  - 1.06. \# cd client
  - 1.07. \# npm install
  - 1.08. \# npm run dev
+
 #Server
  - 1.09. \# cd .. && mkdir server && cd server
  - 1.10. \# npm init -f
